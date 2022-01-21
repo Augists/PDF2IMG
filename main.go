@@ -44,7 +44,6 @@ func main() {
 /*
  * Handle index page
  *    template path: ./tmpl/index.html
- *    TODO: replace image
  */
 func index(w http.ResponseWriter, r *http.Request) {
 	if DEBUG_PRINT {
@@ -61,7 +60,6 @@ func index(w http.ResponseWriter, r *http.Request) {
  * Handle upload page
  *    template path: ./tmpl/upload.html
  *    TODO: beautify upload file button
- *    TODO: replace image
  */
 func upload(w http.ResponseWriter, r *http.Request) {
 	if DEBUG_PRINT {
@@ -81,7 +79,6 @@ func upload(w http.ResponseWriter, r *http.Request) {
 
 /*
  * Handle convert page
- *    TODO: will remove upload directory if upload is empty
  */
 func convert(w http.ResponseWriter, r *http.Request) {
 	if DEBUG_PRINT {
@@ -197,7 +194,6 @@ func getFile(r *http.Request) (string, error) {
 
 /*
  * Handle download page
- *    TODO: download file name
  */
 func download(w http.ResponseWriter, r *http.Request) {
 	if DEBUG_PRINT {
